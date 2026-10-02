@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "react-bits/blur-text",
+      "name": "Blur Text",
+      "source": "React Bits",
+      "sourceUrl": "https://www.reactbits.dev/",
+      "categories": [
+        "text",
+        "reveal"
+      ],
+      "capabilities": [
+        "animated text reveal",
+        "text entrance"
+      ],
+      "frameworks": [
+        "react"
+      ],
+      "dependencies": [
+        "motion-compatible runtime varies by current canonical implementation"
+      ],
+      "license": {
+        "name": "MIT + Commons Clause License Condition v1.0",
+        "redistribution": "restricted",
+        "notes": "Reference metadata only. Retrieve from the canonical React Bits source; do not redistribute the collection through DesignPack."
+      },
+      "install": {
+        "mode": "canonical-page"
+      },
+      "accessibility": {
+        "risk": [
+          "motion"
+        ],
+        "notes": "Provide reduced-motion behavior and preserve readable DOM text."
+      },
+      "performance": {
+        "tier": "low-medium",
+        "notes": "Validate per-character/word animation cost on long strings."
+      },
+      "visualTags": [
+        "editorial",
+        "soft",
+        "reveal"
+      ],
+      "interactionTags": [],
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "react-bits/dither",
+      "name": "Dither / Dithered Background",
+      "source": "React Bits",
+      "sourceUrl": "https://www.reactbits.dev/",
+      "categories": [
+        "background",
+        "shader",
+        "dither"
+      ],
+      "capabilities": [
+        "shader background",
+        "dithering",
+        "procedural visual"
+      ],
+      "frameworks": [
+        "react"
+      ],
+      "dependencies": [
+        "canonical implementation may require WebGL/Three tooling"
+      ],
+      "license": {
+        "name": "MIT + Commons Clause License Condition v1.0",
+        "redistribution": "restricted",
+        "notes": "Metadata only; use the canonical page and current installation mechanism."
+      },
+      "install": {
+        "mode": "canonical-page"
+      },
+      "accessibility": {
+        "risk": [
+          "motion",
+          "contrast"
+        ],
+        "notes": "Keep semantic content outside the effect and provide static/reduced-motion fallback."
+      },
+      "performance": {
+        "tier": "medium",
+        "notes": "Pause offscreen, cap DPR, and validate mobile GPU cost."
+      },
+      "visualTags": [
+        "dither",
+        "technical",
+        "procedural"
+      ],
+      "interactionTags": [],
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "shadcn/dialog",
+      "name": "Dialog",
+      "source": "shadcn/ui",
+      "sourceUrl": "https://ui.shadcn.com/docs/components/dialog",
+      "categories": [
+        "overlay",
+        "dialog"
+      ],
+      "capabilities": [
+        "accessible dialog",
+        "modal",
+        "confirmation"
+      ],
+      "frameworks": [
+        "react"
+      ],
+      "dependencies": [
+        "project-specific shadcn dependencies"
+      ],
+      "license": {
+        "name": "MIT",
+        "redistribution": "allowed"
+      },
+      "install": {
+        "mode": "canonical-command",
+        "command": "npx shadcn@latest add dialog"
+      },
+      "accessibility": {
+        "risk": [],
+        "notes": "Still validate labeling, focus restoration, destructive wording, and project integration."
+      },
+      "performance": {
+        "tier": "low",
+        "notes": "Ordinary DOM primitive."
+      },
+      "visualTags": [
+        "neutral",
+        "adaptable"
+      ],
+      "interactionTags": [
+        "focus-trap",
+        "keyboard"
+      ],
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "radix/dialog",
+      "name": "Dialog Primitive",
+      "source": "Radix Primitives",
+      "sourceUrl": "https://www.radix-ui.com/primitives/docs/components/dialog",
+      "categories": [
+        "primitive",
+        "dialog"
+      ],
+      "capabilities": [
+        "accessible dialog",
+        "modal",
+        "headless primitive"
+      ],
+      "frameworks": [
+        "react"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog"
+      ],
+      "license": {
+        "name": "MIT",
+        "redistribution": "allowed"
+      },
+      "install": {
+        "mode": "package",
+        "command": "npm install @radix-ui/react-dialog"
+      },
+      "accessibility": {
+        "risk": [],
+        "notes": "Use correct title/description semantics and test application focus behavior."
+      },
+      "performance": {
+        "tier": "low",
+        "notes": "Headless DOM primitive."
+      },
+      "visualTags": [
+        "headless"
+      ],
+      "interactionTags": [
+        "keyboard",
+        "focus-management"
+      ],
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "react-aria/dialog",
+      "name": "Dialog",
+      "source": "React Aria",
+      "sourceUrl": "https://react-spectrum.adobe.com/react-aria/Dialog.html",
+      "categories": [
+        "primitive",
+        "dialog"
+      ],
+      "capabilities": [
+        "accessible dialog",
+        "headless primitive"
+      ],
+      "frameworks": [
+        "react"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "redistribution": "allowed"
+      },
+      "install": {
+        "mode": "package",
+        "command": "npm install react-aria-components"
+      },
+      "accessibility": {
+        "risk": [],
+        "notes": "Validate composition and visible focus in the host design system."
+      },
+      "performance": {
+        "tier": "low",
+        "notes": "Behavior primitive; cost depends on surrounding app."
+      },
+      "visualTags": [
+        "headless"
+      ],
+      "interactionTags": [
+        "keyboard",
+        "focus-management"
+      ],
+      "verifiedAt": "2026-10-02"
+    },
+    {
+      "id": "native/command-menu",
+      "name": "Command Menu Pattern",
+      "source": "DesignPack",
+      "sourceUrl": "https://developer.mozilla.org/",
+      "categories": [
+        "command-menu",
+        "search",
+        "pattern"
+      ],
+      "capabilities": [
+        "command menu",
+        "keyboard search",
+        "action palette"
+      ],
+      "frameworks": [
+        "any"
+      ],
+      "dependencies": [],
+      "license": {
+        "name": "N/A pattern guidance",
+        "redistribution": "allowed"
+      },
+      "install": {
+        "mode": "canonical-page"
+      },
+      "accessibility": {
+        "risk": [
+          "composite-widget"
+        ],
+        "notes": "Prefer an established combobox/listbox/dialog primitive rather than hand-rolling ARIA."
+      },
+      "performance": {
+        "tier": "low",
+        "notes": "Virtualize only if result counts justify it."
+      },
+      "visualTags": [
+        "utility"
+      ],
+      "interactionTags": [
+        "keyboard",
+        "search"
+      ],
+      "verifiedAt": "2026-10-02"
+    }
+  ]
+}

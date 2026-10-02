@@ -1,0 +1,1 @@
+:root{--canvas:#0e1116;--surface:#171b22;--text:#e8edf4;--muted:#8e98a8;--radius:8px;--space:8px}body{margin:0;background:var(--canvas);color:var(--text);font:14px/1.5 system-ui}button{border-radius:var(--radius)}

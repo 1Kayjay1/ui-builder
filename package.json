@@ -1,0 +1,63 @@
+{
+  "name": "agent-design-pack",
+  "version": "0.1.0",
+  "description": "Portable design-engineering workflows, project intelligence, and visual QA for coding agents.",
+  "type": "module",
+  "license": "MIT",
+  "author": "KJ",
+  "keywords": [
+    "agent-skills",
+    "design-engineering",
+    "frontend",
+    "visual-qa",
+    "codex",
+    "claude-code"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "bin": {
+    "designpack": "dist/cli.js",
+    "agent-design-pack": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "docs",
+    "evals",
+    "scripts/benchmark.mjs",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/postbuild.mjs",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "pack:check": "npm pack --dry-run",
+    "prepublishOnly": "npm test && npm run pack:check",
+    "benchmark": "npm run build && node scripts/benchmark.mjs"
+  },
+  "optionalDependencies": {
+    "axe-core": "^4.10.3",
+    "playwright-core": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1Kayjay1/ui-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1Kayjay1/ui-builder/issues"
+  },
+  "homepage": "https://github.com/1Kayjay1/ui-builder#readme",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

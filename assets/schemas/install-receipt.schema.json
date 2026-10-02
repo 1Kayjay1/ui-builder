@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DesignPack Install Receipt",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "packageVersion",
+    "installedAt",
+    "scope",
+    "root",
+    "adapters",
+    "managedFiles",
+    "backups",
+    "generatedArtifacts"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "scope": {
+      "enum": [
+        "project",
+        "global"
+      ]
+    },
+    "managedFiles": {
+      "type": "array"
+    },
+    "adapters": {
+      "type": "object"
+    }
+  }
+}

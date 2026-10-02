@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "source": "react-bits",
+      "retrieval": "canonical-link-or-supported-command",
+      "automatedScraping": false,
+      "storeRemoteImages": false,
+      "lastReviewed": "2026-10-02",
+      "notes": "Do not redistribute component collection."
+    },
+    {
+      "source": "pinterest",
+      "retrieval": "link-discovery-and-user-provided-images",
+      "automatedScraping": false,
+      "storeRemoteImages": false,
+      "lastReviewed": "2026-10-02"
+    },
+    {
+      "source": "dribbble",
+      "retrieval": "link-only-or-authorized-api",
+      "automatedScraping": false,
+      "storeRemoteImages": false,
+      "lastReviewed": "2026-10-02"
+    }
+  ]
+}

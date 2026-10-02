@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "greenfield-saas",
+      "prompt": "Build a polished responsive SaaS analytics screen with real loading, empty, success, and error states. Preserve accessibility and avoid generic card-grid styling unless justified."
+    },
+    {
+      "id": "existing-project-extension",
+      "fixture": "fixtures/existing-app",
+      "prompt": "Add a settings surface that matches the existing project's visual language. Do not replace the established tokens or unrelated files."
+    },
+    {
+      "id": "hostile-mobile-state",
+      "fixture": "fixtures/mobile-hostile",
+      "prompt": "Repair this deliberately hostile mobile layout. Preserve behavior, eliminate overflow and inaccessible controls, and verify narrow-phone behavior."
+    }
+  ]
+}
